@@ -18,7 +18,7 @@ const DisplayProjects = () => {
           {
             (show ? projects : projects.filter(c => c.id <= 3) )
               .map((project)=>(
-                <ProjectCard key={project.id} image={project.image} techStack={project.techStack} name={project.name} description={project.description}  github={project.github}/>
+                <ProjectCard key={project.id}   image={project.image} techStack={project.techStack} name={project.name} description={project.description}  github={project.github} id={project.id}/>
               ))
 }
       </div>

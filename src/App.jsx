@@ -5,16 +5,19 @@ import AboutSection from './components/AboutSection'
 import ProjectSection from './components/ProjectSection'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
+import {Routes, Route, Router, BrowserRouter } from 'react-router-dom'
+import ProjectDetails from './pages/ProjectDetails'
+import HomePage from './pages/HomePage'
+import NotExists from './pages/NotExists'
 const App = () => {
   return (
-    <>
-      <Navbar />
-      <HeroSec />
-      <AboutSection />
-      <ProjectSection />
-      <Contact />
-      <Footer />
-    </>
+     <BrowserRouter>
+      <Routes>
+        <Route path='/*' element={<NotExists />} />
+        <Route path='' element={<HomePage />} />
+        <Route path="/project/:projectId" element={<ProjectDetails />} />
+      </Routes>
+     </BrowserRouter>
   )
 }
 
