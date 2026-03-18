@@ -6,10 +6,12 @@ import TechStackCard from './TechStackCard'
 import ProjectCard from './ProjectCard'
 import DisplayProjects from './DisplayProjects'
 import { DisplayTechStack } from './DisplayTechStack'
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import DisplayCertificate from './DisplayCertificate'
+import { portfolioData } from '../data/portfolioData'
 
 const ProjectSection = () => {
+    const { projectSection } = portfolioData;
     const [active, setActive] = useState("Projects");
   return (
     <section id='projects' className='min-h-screen px-6 py-10 lg:px-36 '>
@@ -18,13 +20,13 @@ const ProjectSection = () => {
             whileInView={{ opacity: 1, y: 0 }} // when in viewport
             viewport={{ once: true }}          // animate only once
             transition={{ duration: 1, ease: "easeOut" }}
-            className='text-2xl md:text-3xl lg:text-5xl poppins text-white font-bold text-center'>Portfolio Showcase</motion.h1>
+            className='text-2xl md:text-3xl lg:text-5xl poppins text-white font-bold text-center'>{projectSection.title}</motion.h1>
         <motion.p 
             initial={{ opacity: 0, y: 30 }}   // before appearing
             whileInView={{ opacity: 1, y: 0 }} // when in viewport
             viewport={{ once: true }}          // animate only once
             transition={{ duration: 1, ease: "easeOut" }}
-            className=' text-gray-100 md:text-xl lg:text-2xl md:mt-5 text-center mt-3'>Explore my journey through projects , certifications , and technical expertise. Each section represents a milestone in my continuous learing path.</motion.p>
+            className=' text-gray-100 md:text-xl lg:text-2xl md:mt-5 text-center mt-3'>{projectSection.description}</motion.p>
         <motion.div 
             initial={{ opacity: 0, y: 30 }}   // before appearing
             whileInView={{ opacity: 1, y: 0 }} // when in viewport

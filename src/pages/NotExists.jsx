@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import not from "../assets/404-error.png"
-import { motion } from 'motion/react'
+import { motion } from 'framer-motion'
 const NotExists = () => {
   const navigate = useNavigate();
   const handleNotFound=()=>{

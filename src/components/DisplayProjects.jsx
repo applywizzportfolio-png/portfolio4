@@ -1,9 +1,10 @@
 import React,{useState} from 'react'
-import { projects } from '../data/projects'
+import { portfolioData } from '../data/portfolioData'
 import ProjectCard from './ProjectCard'
 import up from '../assets/up.png'
 import down from '../assets/down.png'
 const DisplayProjects = () => {
+  const { projects } = portfolioData;
   const [show, setshow] = useState(false);
   const size = projects.length;
   const showProjects = () => {

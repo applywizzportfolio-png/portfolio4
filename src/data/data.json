@@ -1,0 +1,101 @@
+{
+  "profile": {
+    "name": "Harsh Vardhan Singh",
+    "firstName": "Harsh",
+    "lastName": "Singh",
+    "initials": "Hv",
+    "role": "Full-Stack",
+    "title": "Java Full-Stack Developer",
+    "email": "hvsinghrathore28@gmail.com",
+    "linkedin": "hvsingh28",
+    "linkedinUrl": "https://linkedin.com/in/hvsingh28",
+    "github": "hvsingh28",
+    "githubUrl": "https://github.com/hvsingh28"
+  },
+  "hero": {
+    "welcomeText": "Hi! Welcome to My",
+    "welcomeHighlight": "Portfolio",
+    "descriptionPrefix": "I'm",
+    "descriptionSuffix": "website developer",
+    "tagline": "Let's build your online presense quickly and efficiently"
+  },
+  "about": {
+    "title": "Know more",
+    "titleHighlight": "About me",
+    "description": "Java Full-Stack Developer specializing in modern web application development using Spring Boot and React. Passionate about building scalable, high-performance systems with clean architecture and well-designed APIs. Focused on delivering reliable, user-centric solutions that balance strong backend engineering with intuitive frontend experiences."
+  },
+  "contact": {
+    "title": "Contact Me !",
+    "subtitle": "Got a question? Send me a message, and I'll get back to you soon.",
+    "formTitle": "Get in Touch",
+    "formDescription": "Have something to discuss? Send me a message and let's talk.",
+    "connectText": "Connect with me !"
+  },
+  "projectSection": {
+    "title": "Portfolio Showcase",
+    "description": "Explore my journey through projects , certifications , and technical expertise. Each section represents a milestone in my continuous learing path."
+  },
+  "techStack": [
+    { "id": 1, "name": "ReactJs" },
+    { "id": 2, "name": "Spring Boot" },
+    { "id": 3, "name": "MySQL" },
+    { "id": 4, "name": "PostgreSQL" },
+    { "id": 5, "name": "Tailwind CSS" },
+    { "id": 6, "name": "Microservices" },
+    { "id": 7, "name": "HTML" },
+    { "id": 8, "name": "CSS" }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "The Silk Cup Café",
+      "description": "A modern, responsive café website built using React, Vite, and Tailwind CSS with advanced animations, multilingual support, and interactive features.",
+      "techStack": ["React", "Vite", "Tailwind CSS", "Framer Motion", "GSAP", "i18next"],
+      "github": "https://github.com/hvsingh28/Cafe-website"
+    },
+    {
+      "id": 2,
+      "name": "Currency Converter",
+      "description": "A responsive currency converter built with React and Tailwind CSS using real-time exchange rates from FreeCurrencyAPI.",
+      "techStack": ["React", "Vite", "Tailwind CSS", "Axios", "FreeCurrencyAPI"],
+      "github": "https://github.com/hvsingh28/currency-convertor"
+    },
+    {
+      "id": 3,
+      "name": "YouTube Homepage Clone",
+      "description": "A desktop-only clone of the YouTube homepage built using HTML and CSS to practice core web development fundamentals.",
+      "techStack": ["HTML5", "CSS3", "Flexbox", "CSS Grid"],
+      "github": "https://github.com/hvsingh28/Youtube_clone"
+    }
+  ],
+  "certificates": [
+    {
+      "id": 1,
+      "cname": "Oracle Certified Foundations Associate",
+      "issuedby": "Oracle",
+      "date": "October 31, 2025",
+      "Verify": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=35688617C1AC2E0BA1DEE31C3693F74F0DA7DD20DD545B03D8FA5023BDD311A6"
+    },
+    {
+      "id": 2,
+      "cname": "Oracle Certified AI Foundations Associate",
+      "issuedby": "Oracle",
+      "date": "October 31, 2025",
+      "Verify": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=D9D14A6A3F979DA62711AB40721CF3D51A8408A6356AD69223128E5CD257DFA6"
+    },
+    {
+      "id": 3,
+      "cname": "React Crash Course",
+      "issuedby": "Udemy",
+      "date": "July 4, 2025",
+      "Verify": "https://www.udemy.com/certificate/UC-cfbe7d51-abb3-4f79-seOf-07c6560ba8e0"
+    },
+    {
+      "id": 4,
+      "cname": "Prompt Engineering and AI with ChatGPT",
+      "issuedby": "Udemy",
+      "date": "May 26, 2025",
+      "Verify": "https://www.udemy.com/certificate/UC-b3ad2647-a69d-4670-8686-b5f637cf3b1c"
+    }
+  ]
+}

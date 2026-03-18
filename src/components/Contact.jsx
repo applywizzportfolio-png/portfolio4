@@ -1,13 +1,15 @@
 import React, { useRef, useState } from 'react';
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import linkedin from '../assets/linkedin.png';
 import mail from '../assets/mail.png';
 import github from '../assets/github.png';
 import click from '../assets/click.png';
 import touch from '../assets/touch.png';
 import emailjs from '@emailjs/browser';
+import { portfolioData } from '../data/portfolioData';
 
 const Contact = () => {
+  const { profile, contact } = portfolioData;
   const form = useRef();
 
   const [errors, setErrors] = useState({});
@@ -88,7 +90,7 @@ const Contact = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         className="lg:text-4xl font-bold"
       >
-        Contact Me !
+        {contact.title}
       </motion.h1>
 
       <motion.p
@@ -98,7 +100,7 @@ const Contact = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         className="text-center italic"
       >
-        Got a question? Send me a message, and I'll get back to you soon.
+        {contact.subtitle}
       </motion.p>
 
       <motion.div
@@ -108,7 +110,7 @@ const Contact = () => {
         transition={{ duration: 1, ease: "easeOut" }}
         className="w-full lg:w-1/3 sm:w-2/3 bg-white/20 rounded flex flex-col gap-3 justify-center items-center p-4"
       >
-        <h1 className="lg:text-xl">Get in Touch</h1>
+        <h1 className="lg:text-xl">{contact.formTitle}</h1>
 
         {success && (
           <p className="text-green-400 text-sm text-center">
@@ -118,7 +120,7 @@ const Contact = () => {
 
         <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-2 w-full">
           <p className="text-center text-sm">
-            Have something to discuss? Send me a message and let's talk.
+            {contact.formDescription}
           </p>
 
           <input
@@ -164,25 +166,25 @@ const Contact = () => {
 
         <div className="bg-white/10 w-full rounded p-4 flex gap-3 flex-col text-sm justify-center items-center">
           <div className="flex gap-2">
-            <p>Connect with me !</p>
+            <p>{contact.connectText}</p>
             <img className="hidden lg:block w-4" src={click} />
             <img className="lg:hidden w-4" src={touch} />
           </div>
 
           <div className="bg-white/5 rounded w-full p-2 flex gap-2">
             <img className="w-6" src={linkedin} />
-            <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/hvsingh28">hvsingh28</a>
+            <a target="_blank" rel="noopener noreferrer" href={profile.linkedinUrl}>{profile.linkedin}</a>
           </div>
 
           <div className="bg-white/5 rounded w-full p-2 flex gap-2">
             <img className="w-6" src={github} />
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/hvsingh28">hvsingh28</a>
+            <a target="_blank" rel="noopener noreferrer" href={profile.githubUrl}>{profile.github}</a>
           </div>
 
           <div className="bg-white/5 rounded w-full p-2 flex gap-2">
             <img className="w-6" src={mail} />
-            <a href="mailto:hvsinghrathore28@gmail.com">
-              hvsinghrathore28@gmail.com
+            <a href={`mailto:${profile.email}`}>
+              {profile.email}
             </a>
           </div>
         </div>

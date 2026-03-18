@@ -1,9 +1,10 @@
 import React ,{useState}from 'react'
 import CertificateCard from './CertificateCard'
-import { certificates } from '../data/certificates'
+import { portfolioData } from '../data/portfolioData'
 import up from '../assets/up.png'
 import down from '../assets/down.png'
 const DisplayCertificate = () => {
+  const { certificates } = portfolioData;
   const [show, setshow] = useState(false);
   const showCertificates = () => {
     show?setshow(false):setshow(true)
