@@ -27,6 +27,7 @@ const ProjectSection = () => {
             viewport={{ once: true }}          // animate only once
             transition={{ duration: 1, ease: "easeOut" }}
             className=' text-gray-100 md:text-xl lg:text-2xl md:mt-5 text-center mt-3'>{projectSection.description}</motion.p>
+        {/* AI_EDITABLE_START */}
         <motion.div 
             initial={{ opacity: 0, y: 30 }}   // before appearing
             whileInView={{ opacity: 1, y: 0 }} // when in viewport
@@ -41,9 +42,9 @@ const ProjectSection = () => {
                 onClick={() => setActive("Projects")}
                 >
                 <img className="md:w-10 w-7" src={proj} />
-                Projects
+                {portfolioData.projectTabs.projects}
                 </button>
-
+ 
                 <button
                 className={`px-1 md:px-3 w-full rounded-2xl text-sm md:text-xl flex flex-col justify-center items-center gap-2
                     hover:bg-[#1b1b1b]/50
@@ -52,9 +53,9 @@ const ProjectSection = () => {
                 onClick={() => setActive("Certificates")}
                 >
                 <img className="md:w-10 w-7" src={cer} />
-                Certificates
+                {portfolioData.projectTabs.certificates}
                 </button>
-
+ 
                 <button
                 className={`px-1 md:px-3 w-full rounded-2xl text-sm md:text-xl flex flex-col justify-center items-center gap-2
                     hover:bg-[#1b1b1b]/50
@@ -63,10 +64,11 @@ const ProjectSection = () => {
                 onClick={() => setActive("Tech")}
                 >
                 <img className="md:w-10 w-7" src={stack} />
-                Tech Stack
+                {portfolioData.projectTabs.techStack}
                 </button>
-
+ 
         </motion.div>
+        {/* AI_EDITABLE_END */}
         {active=="Projects"&& <DisplayProjects />}
         {active=="Certificates"&& <DisplayCertificate />}
         {active=="Tech"&& <DisplayTechStack />}

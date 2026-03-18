@@ -1,4 +1,4 @@
-import data from './data.json';
+import data from '../../data.json';
 
 // Images
 import heroImg from "../assets/Hero.png"
@@ -73,5 +73,8 @@ export const portfolioData = {
   certificates: data.certificates.map(cert => ({
     ...cert,
     image: imageMap.certificates[cert.id]
-  }))
+  })),
+  nav: data.nav,
+  logo: data.logo,
+  projectTabs: data.projectTabs
 };

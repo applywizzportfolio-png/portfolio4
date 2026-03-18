@@ -97,5 +97,19 @@
       "date": "May 26, 2025",
       "Verify": "https://www.udemy.com/certificate/UC-b3ad2647-a69d-4670-8686-b5f637cf3b1c"
     }
-  ]
+  ],
+  "nav": [
+    { "label": "Home", "href": "#home" },
+    { "label": "About", "href": "#about" },
+    { "label": "Projects", "href": "#projects" },
+    { "label": "Let's connect", "href": "#contact" }
+  ],
+  "logo": {
+    "text": "portfolio"
+  },
+  "projectTabs": {
+    "projects": "Projects",
+    "certificates": "Certificates",
+    "techStack": "Tech Stack"
+  }
 }

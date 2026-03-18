@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { portfolioData } from '../data/portfolioData'
 import Logo from './Logo'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
@@ -12,12 +13,13 @@ const Navbar = () => {
           {open?<IoClose onClick={()=>setOpen(false)} className='md:hidden text-white' />:<GiHamburgerMenu onClick={()=>setOpen(true)} className='md:hidden text-white' />}
           
           <div className='hidden md:block'>
+            {/* AI_EDITABLE_START */}
             <ul className='flex font-roboto text-sm md:text-lg font-semibold text-white/90 gap-4 lg:gap-16 '>
-              <a href='#home' className='hover:text-blue-600'><li>Home</li></a>
-              <a href='#about' className='hover:text-blue-600'><li>About</li></a>
-              <a href='#projects' className='hover:text-blue-600'><li>Projects</li></a>
-              <a href='#contact' className='hover:text-blue-600'><li>Let's connect</li></a>
+              {portfolioData.nav.map((item, index) => (
+                <a key={index} href={item.href} className='hover:text-blue-600'><li>{item.label}</li></a>
+              ))}
             </ul>
+            {/* AI_EDITABLE_END */}
           </div>
           {open&& <OpenNav close={()=>setOpen(false)}/>}
          
