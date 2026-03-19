@@ -1,5 +1,9 @@
 # 🌟 Portfolio Website
 
+**Live Demo:** [https://portfolio4-vercel.vercel.app/](https://portfolio4-vercel.vercel.app/)
+
+![Portfolio Preview](./src/assets/portfolio-preview.png)
+
 A modern and responsive portfolio website showcasing my projects, skills, and professional experience. Built with **React**, **Vite**, and **Tailwind CSS** with smooth animations and interactive features.
 
 ## ✨ Features
