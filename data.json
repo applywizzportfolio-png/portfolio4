@@ -1,115 +1,122 @@
 {
-  "profile": {
+  "personal": {
     "name": "Harsh Vardhan Singh",
-    "firstName": "Harsh",
-    "lastName": "Singh",
+    "first_name": "Harsh",
+    "last_name": "Singh",
     "initials": "Hv",
     "role": "Full-Stack",
     "title": "Java Full-Stack Developer",
     "email": "hvsinghrathore28@gmail.com",
     "linkedin": "hvsingh28",
-    "linkedinUrl": "https://linkedin.com/in/hvsingh28",
+    "linkedin_url": "https://linkedin.com/in/hvsingh28",
     "github": "hvsingh28",
-    "githubUrl": "https://github.com/hvsingh28"
+    "github_url": "https://github.com/hvsingh28"
   },
-  "hero": {
-    "welcomeText": "Hi! Welcome to My",
-    "welcomeHighlight": "Portfolio",
-    "descriptionPrefix": "I'm",
-    "descriptionSuffix": "website developer",
-    "tagline": "Let's build your online presense quickly and efficiently"
-  },
-  "about": {
-    "title": "Know more",
-    "titleHighlight": "About me",
-    "description": "Java Full-Stack Developer specializing in modern web application development using Spring Boot and React. Passionate about building scalable, high-performance systems with clean architecture and well-designed APIs. Focused on delivering reliable, user-centric solutions that balance strong backend engineering with intuitive frontend experiences."
-  },
-  "contact": {
-    "title": "Contact Me !",
-    "subtitle": "Got a question? Send me a message, and I'll get back to you soon.",
-    "formTitle": "Get in Touch",
-    "formDescription": "Have something to discuss? Send me a message and let's talk.",
-    "connectText": "Connect with me !"
-  },
-  "projectSection": {
-    "title": "Portfolio Showcase",
-    "description": "Explore my journey through projects , certifications , and technical expertise. Each section represents a milestone in my continuous learing path."
-  },
-  "techStack": [
-    { "id": 1, "name": "ReactJs" },
-    { "id": 2, "name": "Spring Boot" },
-    { "id": 3, "name": "MySQL" },
-    { "id": 4, "name": "PostgreSQL" },
-    { "id": 5, "name": "Tailwind CSS" },
-    { "id": 6, "name": "Microservices" },
-    { "id": 7, "name": "HTML" },
-    { "id": 8, "name": "CSS" }
-  ],
+  "experience": [],
   "projects": [
     {
-      "id": 1,
       "name": "The Silk Cup Café",
       "description": "A modern, responsive café website built using React, Vite, and Tailwind CSS with advanced animations, multilingual support, and interactive features.",
-      "techStack": ["React", "Vite", "Tailwind CSS", "Framer Motion", "GSAP", "i18next"],
-      "github": "https://github.com/hvsingh28/Cafe-website"
+      "tech_stack": ["React", "Vite", "Tailwind CSS", "Framer Motion", "GSAP", "i18next"],
+      "url": "https://github.com/hvsingh28/Cafe-website",
+      "github_url": "https://github.com/hvsingh28/Cafe-website",
+      "date": ""
     },
     {
-      "id": 2,
       "name": "Currency Converter",
       "description": "A responsive currency converter built with React and Tailwind CSS using real-time exchange rates from FreeCurrencyAPI.",
-      "techStack": ["React", "Vite", "Tailwind CSS", "Axios", "FreeCurrencyAPI"],
-      "github": "https://github.com/hvsingh28/currency-convertor"
+      "tech_stack": ["React", "Vite", "Tailwind CSS", "Axios", "FreeCurrencyAPI"],
+      "url": "https://github.com/hvsingh28/currency-convertor",
+      "github_url": "https://github.com/hvsingh28/currency-convertor",
+      "date": ""
     },
     {
-      "id": 3,
       "name": "YouTube Homepage Clone",
       "description": "A desktop-only clone of the YouTube homepage built using HTML and CSS to practice core web development fundamentals.",
-      "techStack": ["HTML5", "CSS3", "Flexbox", "CSS Grid"],
-      "github": "https://github.com/hvsingh28/Youtube_clone"
+      "tech_stack": ["HTML5", "CSS3", "Flexbox", "CSS Grid"],
+      "url": "https://github.com/hvsingh28/Youtube_clone",
+      "github_url": "https://github.com/hvsingh28/Youtube_clone",
+      "date": ""
     }
   ],
-  "certificates": [
+  "skills": [
     {
-      "id": 1,
-      "cname": "Oracle Certified Foundations Associate",
-      "issuedby": "Oracle",
-      "date": "October 31, 2025",
-      "Verify": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=35688617C1AC2E0BA1DEE31C3693F74F0DA7DD20DD545B03D8FA5023BDD311A6"
+      "category": "Frontend",
+      "items": ["ReactJs", "Tailwind CSS", "HTML", "CSS"]
     },
     {
-      "id": 2,
-      "cname": "Oracle Certified AI Foundations Associate",
-      "issuedby": "Oracle",
-      "date": "October 31, 2025",
-      "Verify": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=D9D14A6A3F979DA62711AB40721CF3D51A8408A6356AD69223128E5CD257DFA6"
+      "category": "Backend",
+      "items": ["Spring Boot", "Microservices"]
     },
     {
-      "id": 3,
-      "cname": "React Crash Course",
-      "issuedby": "Udemy",
-      "date": "July 4, 2025",
-      "Verify": "https://www.udemy.com/certificate/UC-cfbe7d51-abb3-4f79-seOf-07c6560ba8e0"
-    },
-    {
-      "id": 4,
-      "cname": "Prompt Engineering and AI with ChatGPT",
-      "issuedby": "Udemy",
-      "date": "May 26, 2025",
-      "Verify": "https://www.udemy.com/certificate/UC-b3ad2647-a69d-4670-8686-b5f637cf3b1c"
+      "category": "Database",
+      "items": ["MySQL", "PostgreSQL"]
     }
   ],
-  "nav": [
-    { "label": "Home", "href": "#home" },
-    { "label": "About", "href": "#about" },
-    { "label": "Projects", "href": "#projects" },
-    { "label": "Let's connect", "href": "#contact" }
+  "education": [],
+  "extras": [
+    {
+      "section_title": "Hero",
+      "items": [
+        { "label": "Welcome Text", "description": "Hi! Welcome to My", "url": "", "date": "" },
+        { "label": "Welcome Highlight", "description": "Portfolio", "url": "", "date": "" },
+        { "label": "Tagline", "description": "Let's build your online presense quickly and efficiently", "url": "", "date": "" }
+      ]
+    },
+    {
+      "section_title": "About",
+      "items": [
+        { "label": "Description", "description": "Java Full-Stack Developer specializing in modern web application development using Spring Boot and React. Passionate about building scalable, high-performance systems with clean architecture and well-designed APIs. Focused on delivering reliable, user-centric solutions that balance strong backend engineering with intuitive frontend experiences.", "url": "", "date": "" }
+      ]
+    },
+    {
+      "section_title": "Contact",
+      "items": [
+        { "label": "Subtitle", "description": "Got a question? Send me a message, and I'll get back to you soon.", "url": "", "date": "" },
+        { "label": "Form Description", "description": "Have something to discuss? Send me a message and let's talk.", "url": "", "date": "" }
+      ]
+    },
+    {
+      "section_title": "Certifications",
+      "items": [
+        {
+          "label": "Oracle Certified Foundations Associate",
+          "description": "Issued by Oracle",
+          "url": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=35688617C1AC2E0BA1DEE31C3693F74F0DA7DD20DD545B03D8FA5023BDD311A6",
+          "date": "Oct 2025"
+        },
+        {
+          "label": "Oracle Certified AI Foundations Associate",
+          "description": "Issued by Oracle",
+          "url": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=D9D14A6A3F979DA62711AB40721CF3D51A8408A6356AD69223128E5CD257DFA6",
+          "date": "Oct 2025"
+        },
+        {
+          "label": "React Crash Course",
+          "description": "Issued by Udemy",
+          "url": "https://www.udemy.com/certificate/UC-cfbe7d51-abb3-4f79-seOf-07c6560ba8e0",
+          "date": "Jul 2025"
+        },
+        {
+          "label": "Prompt Engineering and AI with ChatGPT",
+          "description": "Issued by Udemy",
+          "url": "https://www.udemy.com/certificate/UC-b3ad2647-a69d-4670-8686-b5f637cf3b1c",
+          "date": "May 2025"
+        }
+      ]
+    },
+    {
+      "section_title": "Navigation",
+      "items": [
+        { "label": "Home", "description": "#home", "url": "", "date": "" },
+        { "label": "About", "description": "#about", "url": "", "date": "" },
+        { "label": "Projects", "description": "#projects", "url": "", "date": "" },
+        { "label": "Contact", "description": "#contact", "url": "", "date": "" }
+      ]
+    }
   ],
-  "logo": {
-    "text": "portfolio"
-  },
-  "projectTabs": {
-    "projects": "Projects",
-    "certificates": "Certificates",
-    "techStack": "Tech Stack"
+  "meta": {
+    "template_id": "Harsh-s-Portfolio",
+    "version": "1.0"
   }
 }

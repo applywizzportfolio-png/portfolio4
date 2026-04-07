@@ -49,32 +49,90 @@ const imageMap = {
   }
 };
 
+const getItems = (title) => data.extras?.find(e => e.section_title === title)?.items || [];
+
+const heroItems = getItems("Hero");
+const aboutItems = getItems("About");
+const navItems = getItems("Navigation");
+const certItems = getItems("Certifications");
+
+const contactItems = getItems("Contact");
+
 export const portfolioData = {
   // AI_EDITABLE_START
   ...data,
   // AI_EDITABLE_END
 
   profile: {
-    ...data.profile,
-    avatar: profileImg
+    name: data.personal.name,
+    firstName: data.personal.first_name,
+    lastName: data.personal.last_name,
+    initials: data.personal.initials,
+    role: data.personal.role,
+    avatar: profileImg,
+    linkedin: data.personal.linkedin,
+    linkedinUrl: data.personal.linkedin_url,
+    github: data.personal.github,
+    githubUrl: data.personal.github_url,
+    email: data.personal.email
   },
   hero: {
-    ...data.hero,
+    welcomeText: heroItems.find(i => i.label === "Welcome Text")?.description || "",
+    welcomeHighlight: heroItems.find(i => i.label === "Welcome Highlight")?.description || "",
+    tagline: heroItems.find(i => i.label === "Tagline")?.description || "",
+    descriptionPrefix: "Hi! I'm",
+    descriptionSuffix: "based in India.",
     mainImage: heroImg
   },
-  techStack: data.techStack.map(tech => ({
-    ...tech,
-    image: imageMap.techStack[tech.name]
+  about: {
+    title: "About",
+    titleHighlight: "Me",
+    description: aboutItems.find(i => i.label === "Description")?.description || ""
+  },
+  nav: navItems.map(item => ({
+    label: item.label,
+    href: item.description
   })),
-  projects: data.projects.map(project => ({
-    ...project,
-    image: imageMap.projects[project.id]
+  techStack: (data.skills || []).flatMap((group, gIdx) => 
+    group.items.map((name, iIdx) => ({
+      id: `${gIdx}-${iIdx}`,
+      name: name,
+      image: imageMap.techStack[name]
+    }))
+  ),
+  projects: (data.projects || []).map((p, i) => ({
+    id: i + 1,
+    name: p.name,
+    description: p.description,
+    techStack: p.tech_stack,
+    github: p.github_url,
+    image: imageMap.projects[i + 1]
   })),
-  certificates: data.certificates.map(cert => ({
-    ...cert,
-    image: imageMap.certificates[cert.id]
+  certificates: certItems.map((c, i) => ({
+    id: i + 1,
+    cname: c.label,
+    issuedby: c.description,
+    date: c.date,
+    Verify: c.url,
+    image: imageMap.certificates[i + 1]
   })),
-  nav: data.nav,
-  logo: data.logo,
-  projectTabs: data.projectTabs
+  contact: {
+    title: "Get In Touch",
+    subtitle: contactItems.find(i => i.label === "Subtitle")?.description || "",
+    formTitle: "Send a Message",
+    formDescription: contactItems.find(i => i.label === "Form Description")?.description || "",
+    connectText: "Let's connect"
+  },
+  projectSection: {
+    title: "My Creative Portfolio",
+    description: "A showcase of my recent work, certifications and tech stack."
+  },
+  projectTabs: {
+    projects: "Projects",
+    certificates: "Certificates",
+    techStack: "Tech"
+  },
+  logo: {
+    text: "Portfolio"
+  }
 };
